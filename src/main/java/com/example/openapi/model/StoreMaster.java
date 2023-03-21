@@ -37,7 +37,7 @@ public class StoreMaster {
     @NotNull(message = "Store No cannot be null")
     @NotBlank(message = "Store No cannot be blank")
     @NotEmpty(message = "Store No cannot be empty")
-    private String storeNo;
+    private String c;
 
     @Column(name = "store_name", nullable = false, unique = true, columnDefinition = "Unique number allotted for the store")
     @NotNull(message = "Store Name cannot be null")
@@ -63,18 +63,12 @@ public class StoreMaster {
     private Date closingDate;
 
     @Column(name = "MDS", nullable = true, unique = false, columnDefinition = "Whether the store has McDelivery Sales?")
-    @NotNull(message = "Store Status cannot be null")
-    @NotBlank(message = "Store Status cannot be blank")
-    @NotEmpty(message = "Store Status cannot be empty")
     private String mds;
 
     @Column(name = "MDS_launched", nullable = true, unique = false, columnDefinition = "Date on which the store was converted to McDelivery Service")
     private Date mdsLaunched;
 
     @Column(name = "Mccafe", nullable = true, unique = false, columnDefinition = "Whether the store is Mccafe?")
-    @NotNull(message = "Mccafe cannot be null")
-    @NotBlank(message = "Mccafe cannot be blank")
-    @NotEmpty(message = "Mccafe cannot be empty")
     private String mccafe;
 
     @Column(name = "Mccafe_launched", nullable = true, unique = false, columnDefinition = "Date on which the store was converted to Mccafe")

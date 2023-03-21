@@ -4,4 +4,6 @@ import com.example.openapi.model.StoreMaster;
 
 public interface StoreMasterService {
     public StoreMaster addStore(final StoreMaster storeMaster);
+    public StoreMaster updateStore(final StoreMaster storeMaster);
+    
 }
