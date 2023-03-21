@@ -45,7 +45,7 @@ public class HomeController {
 
     @PutMapping(path = "/store/{store_no}")
     public ResponseEntity<StoreMaster> updateStore(@RequestBody final StoreMaster storeMaster, @PathVariable("store_no") String storeNo){
-        storeMasterService.addStore(storeMaster);
+        storeMasterService.updateStore(storeMaster);
         return new ResponseEntity<>(storeMaster, HttpStatus.OK);
     }
      

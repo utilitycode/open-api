@@ -37,7 +37,7 @@ public class StoreMaster {
     @NotNull(message = "Store No cannot be null")
     @NotBlank(message = "Store No cannot be blank")
     @NotEmpty(message = "Store No cannot be empty")
-    private String c;
+    private String storeNo;
 
     @Column(name = "store_name", nullable = false, unique = true, columnDefinition = "Unique number allotted for the store")
     @NotNull(message = "Store Name cannot be null")
